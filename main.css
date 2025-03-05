@@ -1,0 +1,455 @@
+.examples-waitlist,
+.examples-waitlist * {
+  box-sizing: border-box;
+}
+.examples-waitlist {
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  overflow: hidden;
+}
+
+.header {
+  background: #ffffff;
+  border-style: solid;
+  border-color: #d9d9d9;
+  border-width: 0px 0px 1px 0px;
+  padding: 32px;
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  row-gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: fixed; /* Ya lo tienes, esto lo mantiene fijo */
+  top: 0; /* Lo fija en la parte superior */
+  width: 100%; /* Ocupa todo el ancho */
+  z-index: 1000; /* Asegura que esté por encima de otros elementos */
+  overflow: hidden;
+}
+
+.block {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.figma {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 40px;
+  height: auto;
+  position: relative;
+  overflow: visible;
+}
+
+.navigation-pill-list {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  row-gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  flex: 1;
+  position: relative;
+}
+
+.navigation-pill {
+  background: #f0f0f0;
+  border-radius: 8px;
+  padding: 8px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  text-decoration: none;
+}
+
+.title {
+  color: #1e1e1e;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 100%;
+  font-weight: 400;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.navigation-pill2 {
+  border-radius: 8px;
+  padding: 8px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  text-decoration: none;
+}
+
+.navigation-pill2:hover {
+  background: #f0f0f0;
+}
+
+.title2 {
+  color: #1e1e1e;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 100%;
+  font-weight: 400;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.hero-newsletter {
+  background: #f5f5f5;
+  height: 88vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+  margin-top: 96px; /* Añadido para evitar que el contenido se oculte debajo del header */
+}
+
+.text-content-title {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.title3 {
+  color: #2e62a7;
+  text-align: center;
+  font-family: Copperplate / Copperplate Gothic Light, sans-serif;
+  font-size: 72px;
+  line-height: 120%;
+  letter-spacing: -0.03em;
+  font-weight: 700;
+  position: relative;
+  align-self: stretch;
+}
+
+.subtitle {
+  color: #757575;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 32px;
+  line-height: 120%;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.carousel-inner {
+  display: flex;
+  width: 400%;
+  height: 100%;
+  animation: slide 60s infinite ease;
+}
+
+.hero-image {
+  width: 25%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-25%);
+  }
+  50% {
+    transform: translateX(-50%);
+  }
+  75% {
+    transform: translateX(-75%);
+  }
+  75.01% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.map-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  padding: 24px 24px;
+  background: #ffffff;
+}
+
+.map-title {
+  color: #1e1e1e;
+  text-align: center;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 72px;
+  line-height: 120%;
+  letter-spacing: -0.03em;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.map-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 450px;
+  border: 0;
+}
+
+.footer {
+  background: #ffffff;
+  border-style: solid;
+  border-color: #d9d9d9;
+  border-width: 1px 0px 0px 0px;
+  padding: 32px 32px 160px 32px;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  row-gap: 16px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.title4 {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 262px;
+  min-width: 240px;
+  position: relative;
+}
+
+.figma2 {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  height: auto;
+  position: relative;
+  overflow: visible;
+}
+
+.button-list {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.whatsapp-logo {
+  flex-shrink: 0;
+  width: 23.98px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+
+.logo-instagram {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+
+.text-link-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 262px;
+  position: relative;
+}
+
+.title5 {
+  padding: 0px 0px 16px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.text-strong {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.text-strong2 {
+  color: #1e1e1e;
+  text-align: left;
+  font-family: "Inter-SemiBold", sans-serif;
+  font-size: 16px;
+  line-height: 140%;
+  font-weight: 600;
+  position: relative;
+}
+
+.text-link-list-item {
+  flex-shrink: 0;
+  width: 89px;
+  height: 22px;
+  position: relative;
+}
+
+.list-item {
+  color: #1e1e1e;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 140%;
+  font-weight: 400;
+  position: absolute;
+  right: 19.1%;
+  left: 0%;
+  width: 80.9%;
+  bottom: 0%;
+  top: 0%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.list-item2 {
+  color: #1e1e1e;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 140%;
+  font-weight: 400;
+  position: absolute;
+  right: 12.36%;
+  left: 0%;
+  width: 87.64%;
+  bottom: 0%;
+  top: 0%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.description-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 24px;
+  position: relative;
+  z-index: 2; /* Para que esté por encima del carrusel si hay superposición */
+}
+
+.description-text {
+  color: #32307c; /* Color similar al título "Alquiler Mar de Abajo" */
+  text-align: center;
+  font-family: Copperplate / Copperplate Gothic Light, sans-serif;
+  font-size: 30px;
+  line-height: 140%;
+  font-weight: 600;
+  max-width: 800px;
+  margin: 0 auto;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.beach-image-container {
+  width: 100%;
+  max-width: 1200px; /* Similar al ancho máximo del carrusel */
+  overflow: hidden;
+}
+
+.beach-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px; /* Opcional: para un estilo más suave */
+}

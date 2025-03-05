@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="casastyle.css">
+    <title>Detalles de Casa</title>
+
+</head>
+<body>
+    <div class="examples-product-detail-page">
+        <div class="header">
+            <div class="block">
+                <a href="main.html" class="logo-link">
+                    <img class="figma" src="figma0.svg" alt="Logo" />
+                </a>
+            </div>
+            <div class="navigation-pill-list">
+                <a href="productos.html" class="navigation-pill">
+                    <div class="title">Productos</div>
+                </a>
+                <a href="soluciones.html" class="navigation-pill2">
+                    <div class="title2">Soluciones</div>
+                </a>
+                <a href="contacto.html" class="navigation-pill2">
+                    <div class="title2">Contacto</div>
+                </a>
+            </div>
+            <!-- Se eliminaron los botones "Iniciar Sesión" y "Registrarse" -->
+        </div>
+
+        <div class="page-product">
+            <div class="section">
+                <div class="gallery">
+                    <!-- Galería sin cambios -->
+                    <img class="image main-image" src="img/Casas/Ejemplo.jpg" alt="Casa 1" data-index="0" />
+                    <div class="thumbnails">
+                        <img src="img/Casas/Ejemplo2.jpg" alt="Thumbnail 1" data-index="0" class="thumbnail active" />
+                        <img src="img/Casas/Ejemplo2.jpg" alt="Thumbnail 2" data-index="1" class="thumbnail" />
+                        <img src="img/Casas/Ejemplo2.jpg" alt="Thumbnail 3" data-index="2" class="thumbnail" />
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="body">
+                        <div class="title3">
+                            <div class="text-heading"><div class="text-heading2">Casa 1</div></div>
+                            <div class="price">
+                                <div class="tag"><div class="tag2">Disponible</div></div>
+                                <div class="text-price"><div class="price2"><div class="div">$</div><div class="_50">50</div></div></div>
+                            </div>
+                        </div>
+                        <div class="text"><div class="text2">Descripción de la casa 1</div></div>
+                    </div>
+                    <div class="fields">
+                        <div class="select-field">
+                            <div class="label">Capacidad</div>
+                            <div class="select"><div class="value">4 Personas</div></div>
+                        </div>
+                        <div class="select-field">
+                            <div class="label">Tipo</div>
+                            <div class="select"><div class="value">Cabaña</div></div>
+                        </div>
+                    </div>
+                    <div class="house-details">
+                        <div class="detail-item"><img src="img/icons/rooms.png" alt="Ambientes" class="icon"> 4 amb.</div>
+                        <div class="detail-item"><img src="img/icons/bathroom.png" alt="Baño" class="icon"> 1 baño</div>
+                        <div class="detail-item"><img src="img/icons/garage.png" alt="Cochera" class="icon"> 1 coch.</div>
+                        <div class="detail-item"><img src="img/icons/bedroom.png" alt="Dormitorios" class="icon"> 3 dorm.</div>
+                        <div class="detail-item"><img src="img/icons/orientation.png" alt="Orientación" class="icon"> NE</div>
+                    </div>
+                    <div class="button5">
+                        <img src="img/icons/reserve-icon.png" alt="Reservar" class="reserve-icon">
+                        <div class="button4">Reservar</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Nueva sección de dos columnas -->
+            <div class="content-columns">
+                <div class="left-column">
+                    <div class="card-grid-reviews">
+                        <div class="text-heading3">
+                            <div class="text-heading2">Últimas Reseñas</div>
+                        </div>
+                        <div class="review-form">
+                            <h3>Deja tu reseña</h3>
+                            <form id="reviewForm">
+                                <div class="rating-input">
+                                    <label>Calificación:</label>
+                                    <div class="stars">
+                                        <input type="radio" name="rating" value="1" id="star1" class="star-input">
+                                        <label for="star1" class="star-label">★</label>
+                                        <input type="radio" name="rating" value="2" id="star2" class="star-input">
+                                        <label for="star2" class="star-label">★</label>
+                                        <input type="radio" name="rating" value="3" id="star3" class="star-input">
+                                        <label for="star3" class="star-label">★</label>
+                                        <input type="radio" name="rating" value="4" id="star4" class="star-input">
+                                        <label for="star4" class="star-label">★</label>
+                                        <input type="radio" name="rating" value="5" id="star5" class="star-input">
+                                        <label for="star5" class="star-label">★</label>
+                                    </div>
+                                </div>
+                                <div class="input-field">
+                                    <label for="reviewTitle">Título:</label>
+                                    <input type="text" id="reviewTitle" name="title" required>
+                                </div>
+                                <div class="input-field">
+                                    <label for="reviewBody">Comentario:</label>
+                                    <textarea id="reviewBody" name="body" required></textarea>
+                                </div>
+                                <div class="input-field">
+                                    <label for="reviewerName">Nombre:</label>
+                                    <input type="text" id="reviewerName" name="name" required>
+                                </div>
+                                <button type="submit" class="button6">Enviar Reseña</button>
+                            </form>
+                        </div>
+                        <div class="card-grid" id="reviewGrid">
+                            <!-- Las reseñas se añadirán aquí dinámicamente -->
+                        </div>
+                    </div>
+                </div>
+                <div class="right-column">
+                    <div class="map-section">
+                        <div class="map-title">Ubicación</div>
+                        <div class="map-container">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.154612865548!2d-56.67918927908702!3d-36.72001699999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959c6f672e34a85d%3A0x7d2f09acdd0893ea!2sSan%20Remo%20Majestic%20Hotel!5e1!3m2!1ses!2sar!4v1740978475340!5m2!1ses!2sar" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                    <div class="form-faq-container">
+                        <div class="contact-form-card">
+                            <h3>Déjanos tus datos</h3>
+                            <form id="contactForm">
+                                <div class="input-field">
+                                    <label for="name">Nombre:</label>
+                                    <input type="text" id="name" name="name" required>
+                                </div>
+                                <div class="input-field">
+                                    <label for="email">Email:</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                <div class="input-field">
+                                    <label for="phone">Teléfono:</label>
+                                    <input type="tel" id="phone" name="phone" required>
+                                </div>
+                                <button type="submit" class="button6">Enviar</button>
+                            </form>
+                        </div>
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-title">
+                                    <div class="title4">Preguntas Frecuentes</div>
+                                    <img class="chevron-up" src="Img/logo/Flecha hacia abajo.png" alt="Expandir" />
+                                </div>
+                                <div class="accordion-content">
+                                    <div class="faq-item">
+                                        <div class="title4">¿Cuál es el costo de la reserva?</div>
+                                        <div class="faq-answer">El costo de la reserva es de $50 por noche, con un mínimo de 2 noches.</div>
+                                    </div>
+                                    <div class="faq-item">
+                                        <div class="title4">¿Se permiten mascotas?</div>
+                                        <div class="faq-answer">Sí, se permiten mascotas pequeñas con un cargo adicional de $10 por estadía.</div>
+                                    </div>
+                                    <div class="faq-item">
+                                        <div class="title4">¿Hay Wi-Fi disponible?</div>
+                                        <div class="faq-answer">Sí, hay Wi-Fi gratuito en toda la propiedad.</div>
+                                    </div>
+                                    <div class="faq-item">
+                                        <div class="title4">¿Cuál es la política de cancelación?</div>
+                                        <div class="faq-answer">Puedes cancelar gratis hasta 48 horas antes de la llegada; después, se cobra el 50% del total.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Botón Reservar con logo -->
+                    <div class="button5">
+                        <img src="img/icons/reserve-icon.png" alt="Reservar" class="reserve-icon">
+                        <div class="button4">Reservar</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        <div class="page-newsletter">
+            <div class="text-content-heading">
+                
+                <div class="subheading">Hablanos al WhatsApp si tenes alguna duda !</div>
+            </div>
+            <div class="form-newsletter">
+                <div class="input-field">
+                    <div class="input">
+                        <div class="value">+54 111-111-111</div>
+                    </div>
+                </div>
+                <div class="button6">
+                    <a href="main.html" class="logo-link"></a>
+                    <div class="button4">Contactar</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="title6">
+                <div class="button-list">
+                    <img class="logo-instagram" src="img/logo/Instagram.png" alt="Instagram" />
+                    <img class="logo-you-tube" src="img/logo/Whatsapp.png" alt="WhatsApp" />
+                </div>
+            </div>
+            <div class="text-link-list">
+                <div class="title7">
+                    <div class="text-strong">
+                        <div class="text-strong2">Casos de uso</div>
+                    </div>
+                </div>
+                <div class="text-link-list-item"><div class="list-item">Diseño UI</div></div>
+                <div class="text-link-list-item"><div class="list-item2">Diseño UX</div></div>
+                <div class="text-link-list-item"><div class="list-item3">Wireframing</div></div>
+
+            </div>
+            <div class="text-link-list">
+                <div class="title7">
+                    <div class="text-strong">
+                        <div class="text-strong2">Explorar</div>
+                    </div>
+                </div>
+                <div class="text-link-list-item"><div class="list-item8">Diseño</div></div>
+                <div class="text-link-list-item"><div class="list-item9">Prototipado</div></div>
+                <div class="text-link-list-item"><div class="list-item10">Development features</div></div>
+
+            </div>
+            <div class="text-link-list">
+                <div class="title7">
+                    <div class="text-strong">
+                        <div class="text-strong2">Recursos</div>
+                    </div>
+                </div>
+                <div class="text-link-list-item"><div class="list-item15">Blog</div></div>
+                <div class="text-link-list-item"><div class="list-item16">Best practices</div></div>
+                <div class="text-link-list-item"><div class="list-item17">Colors</div></div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para el zoom -->
+    <div id="imageModal" class="modal">
+        <span class="close">×</span>
+        <img class="modal-content" id="modalImage" />
+        <div class="modal-thumbnails">
+            <img src="img/Casas/Ejemplo.jpg" alt="Thumbnail 1" data-index="0" class="modal-thumbnail active" />
+            <img src="img/Casas/Ejemplo2.jpg" alt="Thumbnail 2" data-index="1" class="modal-thumbnail" />
+            <img src="img/Casas/Ejemplo2.jpg" alt="Thumbnail 3" data-index="2" class="modal-thumbnail" />
+        </div>
+        <a class="prev" onclick="changeImage(-1)">❮</a>
+        <a class="next" onclick="changeImage(1)">❯</a>
+    </div>
+
+    <!-- JavaScript para manejar reseñas y galería -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            let reviews = JSON.parse(localStorage.getItem('reviews')) || [];
+            const reviewGrid = document.getElementById('reviewGrid');
+    
+            // Cargar reseñas iniciales
+            reviews.forEach(review => addReviewToGrid(review));
+    
+            // Manejar envío del formulario
+            const reviewForm = document.getElementById('reviewForm');
+            reviewForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const rating = document.querySelector('input[name="rating"]:checked')?.value || '0';
+                const title = document.getElementById('reviewTitle').value;
+                const body = document.getElementById('reviewBody').value;
+                const name = document.getElementById('reviewerName').value;
+                const date = new Date().toLocaleDateString();
+                const id = Date.now().toString(); // ID único
+                const newReview = { id, rating: parseInt(rating), title, body, name, date };
+                reviews.push(newReview);
+                localStorage.setItem('reviews', JSON.stringify(reviews));
+                addReviewToGrid(newReview);
+                reviewForm.reset();
+            });
+    
+            // Delegación de eventos para eliminar reseñas
+            reviewGrid.addEventListener('click', (e) => {
+                if (e.target.classList.contains('delete-btn')) {
+                    const idToDelete = e.target.getAttribute('data-id');
+                    reviews = reviews.filter(review => review.id !== idToDelete);
+                    localStorage.setItem('reviews', JSON.stringify(reviews));
+                    reviewGrid.innerHTML = '';
+                    reviews.forEach(review => addReviewToGrid(review));
+                }
+            });
+    
+            function addReviewToGrid(review) {
+                const reviewCard = document.createElement('div');
+                reviewCard.className = 'review-card';
+                reviewCard.innerHTML = `
+                    <div class="rating">${'★'.repeat(review.rating)}${'☆'.repeat(5 - review.rating)}</div>
+                    <div class="review-body">
+                        <div class="text-heading3">
+                            <div class="text-heading2">${review.title}</div>
+                        </div>
+                        <div class="text">
+                            <div class="text3">${review.body}</div>
+                        </div>
+                    </div>
+                    <div class="avatar-block">
+                        <div class="avatar">
+                            <img class="shape" src="shape0.png" alt="Avatar" />
+                        </div>
+                        <div class="info">
+                            <div class="title5">${review.name}</div>
+                            <div class="description">${review.date}</div>
+                        </div>
+                    </div>
+                    <button class="delete-btn" data-id="${review.id}">Eliminar</button>
+                `;
+                reviewGrid.appendChild(reviewCard);
+            }
+    
+            // Acordeón plegable
+            const accordionItems = document.querySelectorAll('.accordion-item');
+            accordionItems.forEach(item => {
+                const chevron = item.querySelector('.chevron-up');
+                chevron.addEventListener('click', () => {
+                    item.classList.toggle('active');
+                });
+            });
+    
+            // Sistema de estrellas mejorado
+            const starInputs = document.querySelectorAll('.star-input');
+            const starLabels = document.querySelectorAll('.star-label');
+    
+            starLabels.forEach((label, index) => {
+                label.addEventListener('mouseover', () => {
+                    for (let i = 0; i <= index; i++) {
+                        starLabels[i].style.color = '#ffd700';
+                    }
+                    for (let i = index + 1; i < starLabels.length; i++) {
+                        starLabels[i].style.color = '#ccc';
+                    }
+                });
+    
+                label.addEventListener('mouseout', () => {
+                    const checkedInput = document.querySelector('.star-input:checked');
+                    if (checkedInput) {
+                        const checkedIndex = parseInt(checkedInput.value) - 1;
+                        for (let i = 0; i <= checkedIndex; i++) {
+                            starLabels[i].style.color = '#ffd700';
+                        }
+                        for (let i = checkedIndex + 1; i < starLabels.length; i++) {
+                            starLabels[i].style.color = '#ccc';
+                        }
+                    } else {
+                        starLabels.forEach(l => l.style.color = '#ccc');
+                    }
+                });
+            });
+    
+            // Galería y Modal
+            const modal = document.getElementById("imageModal");
+            const modalImg = document.getElementById("modalImage");
+            const mainImage = document.querySelector(".main-image");
+            const thumbnails = document.querySelectorAll(".thumbnail");
+            const modalThumbnails = document.querySelectorAll(".modal-thumbnail");
+            const closeBtn = document.querySelector(".close");
+            let currentIndex = 0;
+            const images = [
+                "image0.png",
+                "image1.png",
+                "image2.png"
+            ];
+    
+            // Verifica que las imágenes existan al cargar
+            images.forEach((src, index) => {
+                const img = new Image();
+                img.src = src;
+                img.onload = () => console.log(`Imagen ${index} cargada correctamente: ${src}`);
+                img.onerror = () => console.error(`Error al cargar la imagen ${index}: ${src}`);
+            });
+    
+            mainImage.addEventListener("click", () => {
+                modal.style.display = "block";
+                modalImg.src = mainImage.src;
+                currentIndex = parseInt(mainImage.getAttribute("data-index"));
+                updateThumbnailActive();
+            });
+    
+            closeBtn.addEventListener("click", () => {
+                modal.style.display = "none";
+            });
+    
+            thumbnails.forEach((thumb) => {
+                thumb.addEventListener("click", () => {
+                    const index = parseInt(thumb.getAttribute("data-index"));
+                    mainImage.src = images[index];
+                    mainImage.setAttribute("data-index", index);
+                    thumbnails.forEach(t => t.classList.remove("active"));
+                    thumb.classList.add("active");
+                });
+            });
+    
+            modalThumbnails.forEach((thumb) => {
+                thumb.addEventListener("click", () => {
+                    currentIndex = parseInt(thumb.getAttribute("data-index"));
+                    modalImg.src = images[currentIndex];
+                    updateThumbnailActive();
+                });
+            });
+    
+            window.changeImage = function (direction) {
+                currentIndex += direction;
+                if (currentIndex < 0) currentIndex = images.length - 1;
+                if (currentIndex >= images.length) currentIndex = 0;
+                modalImg.src = images[currentIndex];
+                updateThumbnailActive();
+            };
+    
+            function updateThumbnailActive() {
+                modalThumbnails.forEach((thumb) => {
+                    thumb.classList.remove("active");
+                    if (parseInt(thumb.getAttribute("data-index")) === currentIndex) {
+                        thumb.classList.add("active");
+                    }
+                });
+            }
+    
+            modal.addEventListener("click", (e) => {
+                if (e.target === modal) {
+                    modal.style.display = "none";
+                }
+            });
+        });
+    </script>
+</body>
+</html>
